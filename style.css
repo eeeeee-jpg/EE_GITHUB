@@ -118,6 +118,14 @@ nav a:hover {
     background-color: black;
 }
 
+.about h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
 .about h2 {
     text-align: center;
     font-size: 36px;
@@ -214,8 +222,10 @@ nav a:hover {
 
 .project-item img {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 560px;
+    object-fit: contain;
+    background: #000000;
+    display: block;
 }
 
 .project-item figcaption {
@@ -344,4 +354,31 @@ footer {
     .contact {
         padding: 60px 30px;
     }
+}
+    .img-row{
+  display: flex;
+  justify-content: center;
+  gap: 20px;    
+  width: 100%;          /* 진짜 붙이려면 0, 띄우려면 20px */
+}
+
+.project-link{
+  width: 100%;
+  display: block;
+}
+
+.project-link img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-link figure{
+  margin: 0;
+}
+
+.project-link figcaption{
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
 }
